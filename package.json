@@ -1,0 +1,17 @@
+{
+  "name": "http-upgrade-protocol-negotiate",
+  "version": "0.1.0",
+  "description": "Checks if protocols requested in an HTTP Upgrade header match those offered by the server.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {}
+}
