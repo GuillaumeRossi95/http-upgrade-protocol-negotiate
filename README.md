@@ -38,3 +38,10 @@ fragments (from double commas) and leading-slash fragments (malformed)
 are silently skipped rather than raising; a bad header should not break
 negotiation.  If you need strict validation that rejects malformed
 headers, this library is not it.
+
+## Design notes
+
+The window stores values eagerly rather than keeping running aggregates. Running
+sums drift with floating point over long streams, and recomputing from a small
+buffer is cheap enough that the drift is not worth the speed.
+
