@@ -1,6 +1,6 @@
 {
   "name": "http-upgrade-protocol-negotiate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Checks if protocols requested in an HTTP Upgrade header match those offered by the server.",
   "type": "module",
   "main": "src/index.js",
